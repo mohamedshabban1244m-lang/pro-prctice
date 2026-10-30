@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Instant Store</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-dark fixed-top">
+        <div class="container d-flex justify-content-between">
+
+            <a class="navbar-brand text-white" href="#">
+                Instant
+            </a>
+
+            <div class="text-white">
+                Cart:
+                <span class="badge badge-primary" id="cart-count">0</span>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Products Section -->
+    <div class="container text-center mt-5">
+
+        <h2 class="pt-5">Our Products</h2>
+        <p>Choose Your Favourite Product</p>
+
+        <div class="row py-5">
+
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+
+                    <img src="img/shopping.avif" class="w-100" alt="Watch">
+
+                    <div class="card-body">
+
+                        <h5>Watch</h5>
+                        <p class="price">400</p>
+
+                        <button class="tst btn btn-primary">
+                            Add to Cart
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+
+                    <img src="img/snakerswebp.webp" class="w-100" alt="Sneakers">
+
+                    <div class="card-body">
+
+                        <h5>Sneakers</h5>
+                        <p class="price">350</p>
+
+                        <button class="tst btn btn-primary">
+                            Add to Cart
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+
+                    <img src="img/R7.avif" class="w-75" alt="Watch">
+
+                    <div class="card-body">
+
+                        <h5>Watch</h5>
+                        <p class="price">300</p>
+
+                        <button class="tst btn btn-primary">
+                            Add to Cart
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Cart Summary -->
+    <section class="container text-center my-5 card p-4">
+
+        <h3>Cart Summary</h3>
+
+        <div>
+            Item: <span id="cart-item">0</span>
+        </div>
+
+        <div>
+            Total: $<span id="total-summary">0</span>
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
